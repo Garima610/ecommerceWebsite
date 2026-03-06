@@ -39,3 +39,58 @@ a{
   margin-bottom: 20px;
  color:darkblue;
 }
+ .container{
+   display: flex;
+   gap:60px;
+   padding: 30px 60px;
+   overflow-x: auto;
+   scroll-behavior:smooth; 
+   align-items: center;
+   
+   
+ }
+ .container::-webkit-scrollbar{
+  display: none;
+ }
+
+ 
+.product{
+  min-width: 120px;
+  text-align: center;
+  transition: transform 0.3s ease,
+            box-shadow 0.3s ease,
+            
+  
+}
+.product img{
+
+    width:90px;
+    height:80px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    
+
+}
+.product:hover{
+
+transform: translateY(-6px);
+
+
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+
+background:#fafafa;
+
+}
+.product:hover img{
+transform:scale(1.1);
+}
+
+
+.product p{
+
+    margin-top:8px;
+    font-size:14px;
+    
+}
